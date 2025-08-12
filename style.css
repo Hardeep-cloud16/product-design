@@ -151,8 +151,8 @@ body {
 }
 
 
-/* #second {
-  padding: 200px 10vw 100px 10vw; 
+#second {
+  padding: 200px 10vw 100px 10vw;
   width: 100%;
   background-color: black;
   color: #fff;
@@ -174,7 +174,8 @@ body {
   font-size: 7.6vw;
   opacity: 0.7;
 }
-.elem h1:hover{
+
+.elem h1:hover {
   opacity: 0.3;
   color: #888;
 }
@@ -190,7 +191,7 @@ body {
   border-bottom: 1px solid #888;
 }
 
-.elem  img {
+.elem img {
   max-height: 350px;
   width: auto;
   position: absolute;
@@ -201,78 +202,9 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.elem,.Image_radius{
+.elem,
+.Image_radius {
   border-radius: 10px;
-} */
- #second {
-  padding: 200px 10vw 100px 10vw;
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  height: auto;
-}
-
-/* Change .elem to work with <a> */
-.elem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3.5vw 0;
-  border-top: 1px solid #888;
-  position: relative;
-  text-decoration: none; /* Remove underline */
-  color: white; /* Link text color */
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-/* On hover, background change to show clickable */
-.elem:hover {
-  background-color: #222;
-  cursor: pointer;
-}
-
-.elem h1 {
-  text-transform: uppercase;
-  font-size: 7.6vw;
-  opacity: 0.7;
-  margin: 0;
-  transition: opacity 0.3s, color 0.3s;
-}
-
-.elem h1:hover {
-  opacity: 0.3;
-  color: #888;
-}
-
-.elem h5 {
-  font-size: 1.2vw;
-  font-weight: 400;
-  opacity: 0.6;
-  color: white;
-  margin: 0;
-}
-
-.elem img {
-  max-height: 350px;
-  width: auto;
-  border-radius: 10px;
-  margin-right: 20px; /* spacing between img and text */
-  transition: transform 0.3s ease;
-}
-
-/* Optional: Slight scale effect on image hover */
-.elem:hover img {
-  transform: scale(1.05);
-}
-
-/* Remove absolute positioning from images */
-.elem img {
-  position: relative;
-  opacity: 1;
-  pointer-events: auto;
-  transform: none;
-  z-index: auto;
 }
 
 /* ABOUT SECTION FIX */
@@ -284,7 +216,8 @@ body {
   padding-left: 40vw;
   background-color: black;
   color: white;
-  margin-top: 100px; /* reduced margin so it doesn't overlap */
+  margin-top: 100px;
+  /* reduced margin so it doesn't overlap */
 }
 
 #imageabout {
@@ -323,6 +256,7 @@ body {
   color: #fff;
   transition: all 0.3s ease;
 }
+
 #textabout a:hover {
   background-color: #fff;
   color: #000;
@@ -386,7 +320,8 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px; /* text ke neeche */
+  bottom: -2px;
+  /* text ke neeche */
   width: 0%;
   height: 2px;
   background: #fff;
@@ -397,6 +332,22 @@ body {
   width: 100%;
 }
 
+#Marque_section{
+border-top: 1px solid #888;
+border-bottom: 1px solid #888;
+
+margin-top: 200px;
+height: 100px;
+}
+#Marque_section marquee img{
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+height: 50px;
+margin: 50px;
+
+}
 /* Responsive for tablets and mobiles */
 @media (max-width: 768px) {
   #heading h1 {
@@ -467,7 +418,8 @@ body {
     position: relative !important;
     max-height: 200px !important;
     margin: 10px auto 0 auto !important;
-    opacity: 1 !important; /* Show images on mobile */
+    opacity: 1 !important;
+    /* Show images on mobile */
     transform: none !important;
     pointer-events: auto !important;
   }

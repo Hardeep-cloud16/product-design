@@ -91,24 +91,21 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
 });
 const miniCircle = document.getElementById('mini_circle');
-const circleText = document.getElementById('circle_text');
+
 
 document.querySelectorAll('.elem').forEach(elem => {
   elem.addEventListener('mouseenter', () => {
     // Mini circle thoda bada kar
     miniCircle.style.width = '40px';
     miniCircle.style.height = '40px';
-    // Text show kar
-    circleText.textContent = 'View';
-    circleText.style.display = 'block';
+
   });
 
   elem.addEventListener('mouseleave', () => {
     // Size wapas chhota kar
     miniCircle.style.width = '10px';
     miniCircle.style.height = '10px';
-    // Text hide kar
-    circleText.style.display = 'none';
+    
   });
 });
 
